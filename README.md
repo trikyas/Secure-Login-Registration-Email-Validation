@@ -23,6 +23,13 @@ Go to your phpMyAdmin and create an EMPTY Database, named registration and impor
 Open your browser and enjoy.
 [Secure-Login-Registration-Email-Validation](http://127.0.0.1:8888/registration/sign_up.php)
 
+The email credentials are placed in ./includes/header.php on lines 41 - 42
+
+```
+$mail->Username = "YOUR_GMAIL_ADDRESS@gmail.com";
+$mail->Password = "YOUR_GMAIL_PASSWORD";
+```
+
 
 ## Authors
 
@@ -37,5 +44,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone who claims their code was used
 * NO MD5! 
 * Thanks to my family for being there.
-* My Son **Sevah** , my Daughter **josie** and my Wife **Kat**
+* My Son **Sevah** , my Daughter **Josephine** and my Wife **Katrina**
 * You guys are my world!
