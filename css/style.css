@@ -1,0 +1,177 @@
+/* START Fonts */
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cormorant+SC|Maitree|Major+Mono+Display&display=swap');
+
+/*
+
+
+font-family: 'Cinzel', serif;
+font-family: 'Cormorant SC', serif;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Maitree', serif;
+
+*/
+
+ /* END Fonts */
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+:root {--red:rgb(255, 0, 98);--fp:100%;--fvw:100vw;--fvh:100vh;--ctr:center;--wht:#fff;--c1:#EfEfEf50;--c2:#f7f7f7;--clr:transparent;--null:0;--no:none;--rm:1rem;--rm1_5:1.5rem;--rm1_6:1.6rem;--rm1:2rem;--rm2:3rem;--rm4:5rem;--flx:flex;}
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: var(--fp);
+}
+body {
+  font-size: var(--rm1_6);
+  background-color: var(--c2);
+  width: var(--fp);
+  font-family: 'Cinzel', serif;
+}
+.container {
+  max-width: var(--fvw);
+  min-height: var(--fvh);
+  /* background-color: #E5E5E5; */
+  background-color: var(--c2);
+  background-image: radial-gradient(var(--c1) 9px, var(--clr) 10px), repeating-radial-gradient(var(--c1) var(--null), var(--c1) 4px, var(--clr) 5px, var(--clr) 20px, var(--c1) 21px, var(--c1) 25px, var(--clr) 26px, var(--clr) 50px),repeating-conic-gradient( rgba(255, var(--null), 98, .10), var(--clr), rgba(255, var(--null), 98, .25) 12deg);
+  background-size: 30px 30px,90px 90px;
+  background-position: var(--null) var(--null);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:var(--flx);
+  overflow: hidden;
+}
+.content {
+  width: 40%;
+  margin-left: 30%;
+  background-color: var(--wht);
+  padding: var(--rm2) var(--rm);
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: var(--fvw);
+    height: var(--fvh);
+    background-color: #E5E5E5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:var(--flx);
+  }
+  .content {
+    width: var(--fp);
+    margin-left: var(--null);
+    background-color: var(--wht);
+    padding: var(--rm2) var(--rm);
+  }
+}
+.heading {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: var(--rm2);
+  letter-spacing: 2px;
+  text-align: var(--ctr);
+  color: #777;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 3px;
+  background-color: var(--red);
+  margin-left: calc( 50% - var(--rm4) );
+  margin-top: var(--rm1);
+  margin-bottom: var(--rm1);
+}
+.input-box {
+  width: var(--fp);
+}
+.input-control {
+  padding: var(--rm) var(--rm1_5);
+  width: var(--fp);
+  margin: var(--rm) var(--null);
+  outline: var(--no);
+  border: var(--no);
+  border: 1px solid #E5E5E5;
+  font-size: var(--rm1_6);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.input-control:focus {
+  border: 1px solid var(--red);
+}
+.rm-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:var(--flx);
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+.remember-me,
+.forgot-password {
+  margin-top: var(--rm1_5);
+}
+.input-submit {
+  color: var(--wht);
+  background-color: var(--red);
+  border: var(--no);
+  outline: var(--no);
+  width: var(--fp);
+  padding: var(--rm) var(--rm1_5);
+  margin-top: var(--rm1);
+  font-family: 'Cinzel', serif;
+  font-weight: 900;
+}
+.input-submit:hover {
+  cursor: pointer;
+  background-color: rgb(179, 4, 71);
+}
+.login-cta,
+.sign-up-cta {
+  text-align: var(--ctr);
+  margin-top: var(--rm1);
+}
+.error {
+  color: var(--red);
+  font-size: 1.4rem;
+  margin-left: var(--rm1_5);
+}
+.notification {
+  text-align: var(--ctr);
+  background-color: #999;
+  border-left: 6px solid var(--red);
+  color: var(--wht);
+  padding: var(--rm) var(--rm1);
+  margin: var(--rm) var(--null);
+}
+.signed {
+  text-align: var(--ctr);
+  background-color: #999;
+  border-left: 6px solid var(--red);
+  color: var(--wht);
+  padding: var(--rm) var(--rm1);
+  margin: 0;
+  overflow: hidden;
+}
+footer {
+  width: var(--fp);
+  height: 5vh;
+}
+.front-end {
+  background-image: linear-gradient(to right bottom, rgba(187, 5, 75, 0.952), var(--red));
+  background-color: red;
+  width: var(--fp);
+  max-width: var(--fvw);
+  min-height: var(--fvh);
+  font-size: var(--rm4);
+  color: var(--wht);
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: var(--ctr);
+}
