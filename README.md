@@ -8,7 +8,10 @@ Clone or Download Repository
 ```
 $ git clone https://github.com/trikyas/Secure-Login-Registration-Email-Validation
 ```
-Navigate into the directory.
+Install PHPMailer. Follow the link for more information
+[PHPMailer](https://github.com/PHPMailer/PHPMailer)
+
+Navigate into the directory /Secure-Login-Registration-Email-Validation.
 ```
 $ cd Secure-Login-Registration-Email-Validation/
 ```
@@ -18,7 +21,7 @@ $ composer require phpmailer/phpmailer
 ```
 Start your server e.g. MAMP, LAMP ...
 
-Go to your phpMyAdmin and create an EMPTY Database, named registration and import the database.sql
+Go to your phpMyAdmin and create an EMPTY Database, named *registration* and import the database.sql
 
 Open your browser and enjoy.
 [Secure-Login-Registration-Email-Validation](http://127.0.0.1:8888/registration/sign_up.php)
