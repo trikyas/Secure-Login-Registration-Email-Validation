@@ -14,7 +14,7 @@ $ cd Secure-Login-Registration-Email-Validation/
 ```
 Now just run composer require or composer install.
 ```
-$ composer require
+$ composer require phpmailer/phpmailer
 ```
 Start your server e.g. MAMP, LAMP ...
 
